@@ -27,6 +27,7 @@
 		4FF8F36E1B401368005C73C2 /* ESFormatInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8F36D1B401368005C73C2 /* ESFormatInfo.m */; };
 		4FF8F3721B401487005C73C2 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8F3711B401487005C73C2 /* NSObject_Extension.m */; };
 		4FF8F3751B4014AB005C73C2 /* ESPbxprojInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8F3741B4014AB005C73C2 /* ESPbxprojInfo.m */; };
+		D55E124A204549C4000BC840 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D55E1249204549C4000BC840 /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		4FF8F3731B4014AB005C73C2 /* ESPbxprojInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPbxprojInfo.h; sourceTree = "<group>"; };
 		4FF8F3741B4014AB005C73C2 /* ESPbxprojInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPbxprojInfo.m; sourceTree = "<group>"; };
 		4FF8F3761B401914005C73C2 /* ESJsonFormat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESJsonFormat-Prefix.pch"; sourceTree = "<group>"; };
+		D55E1248204549C4000BC840 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		D55E1249204549C4000BC840 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 		4FF8F3411B400F8B005C73C2 /* ESJsonFormat */ = {
 			isa = PBXGroup;
 			children = (
+				D55E12472045499D000BC840 /* XMLDictionary */,
 				4FB2DAA31B5BDC06000D5DA9 /* Setting */,
 				4FC82A461B520D8F00B4239F /* Utils */,
 				4FF8F36F1B401487005C73C2 /* Category */,
@@ -193,6 +197,15 @@
 				4FDBA00C1B47BA8E00FAEBE9 /* NSString+ESExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		D55E12472045499D000BC840 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D55E1248204549C4000BC840 /* XMLDictionary.h */,
+				D55E1249204549C4000BC840 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 				4FF8F3681B401233005C73C2 /* ESClassInfo.m in Sources */,
 				4FB2DAA61B5BDC53000D5DA9 /* ESJsonFormatSetting.m in Sources */,
 				4FF8F3481B400F8B005C73C2 /* ESJsonFormat.m in Sources */,
+				D55E124A204549C4000BC840 /* XMLDictionary.m in Sources */,
 				4FB2DAA11B5BD84E000D5DA9 /* ESSettingController.m in Sources */,
 				4FF8F36E1B401368005C73C2 /* ESFormatInfo.m in Sources */,
 				4F6FB4EA1B4967420023406F /* ESPair.m in Sources */,

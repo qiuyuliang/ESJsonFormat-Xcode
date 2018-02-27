@@ -13,6 +13,7 @@
 #import "ESClassInfo.h"
 #import "ESJsonFormatSetting.h"
 #import "ESPair.h"
+#import "XMLDictionary.h"
 
 @interface ESInputJsonController ()<NSTextViewDelegate,NSWindowDelegate>
 
@@ -66,7 +67,8 @@
 
 - (IBAction)enterButtonClick:(NSButton *)sender {
     NSTextView *textView = self.inputTextView;
-    id result = [self dictionaryWithJsonStr:textView.string];
+//    id result = [self dictionaryWithJsonStr:textView.string];
+    id result = [NSDictionary dictionaryWithXMLString:textView.string];
     if ([result isKindOfClass:[NSError class]]) {
         NSError *error = result;
         NSAlert *alert = [NSAlert alertWithError:error];
@@ -213,7 +215,8 @@
 
 -(void)textDidChange:(NSNotification *)notification{
     NSTextView *textView = notification.object;
-    id result = [self dictionaryWithJsonStr:textView.string];
+//    id result = [self dictionaryWithJsonStr:textView.string];
+    id result = [NSDictionary dictionaryWithXMLString:textView.string];
     if ([result isKindOfClass:[NSDictionary class]]) {
         NSDictionary *dic = result;
         [dic enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
